@@ -62,9 +62,18 @@ form h2 {
 
 .input-field label {
     position: absolute;
-    top: 50px;
+    top: 50%;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
     font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    transform: translateY(-120%);
+    font-size: 0.8rem;
+    top: 10px;
 }

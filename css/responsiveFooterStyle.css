@@ -76,4 +76,9 @@ footer .content .right input[type="submit"] {
     cursor: pointer;
     margin-top: 12px;
     border: 2px solid #eb2f06;
+    transition: all;
+}
+.content .right input[type="submit"]:hover{
+    background: none;
+    color: #eb2f06;
 }
